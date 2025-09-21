@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Core - Purity in Every Drop | Premium Packaged Drinking Water</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Crystal Core offers premium packaged drinking water with ISI and FSSAI certifications. Experience purity in every drop with our 250ml, 500ml, and 1L bottles.">
+    <meta name="keywords" content="packaged drinking water, bottled water, Crystal Core, pure water, ISI certified, FSSAI approved, mineral water">
+    <meta name="author" content="Crystal Core">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Crystal Core - Purity in Every Drop">
+    <meta property="og:description" content="Premium packaged drinking water with ISI and FSSAI certifications.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://crystalcore.com">
+    
+    <!-- Favicon Placeholder -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9IiMwOTY5ZGEiLz4KPHR3eHQgeD0iOCIgeT0iMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiPkNDPC90ZXh0Pgo8L3N2Zz4K">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-50: #eff6ff;
+            --primary-100: #dbeafe;
+            --primary-200: #bfdbfe;
+            --primary-300: #93c5fd;
+            --primary-400: #60a5fa;
+            --primary-500: #3b82f6;
+            --primary-600: #2563eb;
+            --primary-700: #1d4ed8;
+            --primary-800: #1e40af;
+            --primary-900: #1e3a8a;
+            --accent-400: #0ea5e9;
+            --accent-500: #0284c7;
+            --accent-600: #0369a1;
+        }
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        /* Glassmorphism */
+        .glass {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        
+        .glass-dark {
+            background: rgba(30, 64, 175, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+        
+        /* Premium Gradients */
+        .gradient-primary {
+            background: linear-gradient(135deg, var(--primary-500), var(--accent-500));
+        }
+        
+        .gradient-secondary {
+            background: linear-gradient(135deg, var(--primary-600), var(--primary-800));
+        }
+        
+        .gradient-accent {
+            background: linear-gradient(135deg, var(--accent-400), var(--accent-600));
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary-600), var(--accent-500));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Premium shadows */
+        .shadow-premium {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(255, 255, 255, 0.05);
+        }
+        
+        .shadow-glow {
+            box-shadow: 0 0 40px rgba(59, 130, 246, 0.15);
+        }
+        
+        .shadow-inner-premium {
+            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+        }
+        
+        /* Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        @keyframes wave {
+            0%, 100% { transform: translateX(0px); }
+            50% { transform: translateX(-10px); }
+        }
+        
+        @keyframes glow {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+        
+        @keyframes slideInUp {
+            from { 
+                opacity: 0; 
+                transform: translateY(60px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+        
+        @keyframes fadeInScale {
+            from { 
+                opacity: 0; 
+                transform: scale(0.8); 
+            }
+            to { 
+                opacity: 1; 
+                transform: scale(1); 
+            }
+        }
+        
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        .animate-wave { animation: wave 4s ease-in-out infinite; }
+        .animate-glow { animation: glow 2s ease-in-out infinite; }
+        .animate-slide-up { animation: slideInUp 0.8s ease-out; }
+        .animate-fade-scale { animation: fadeInScale 0.6s ease-out; }
+        
+        /* Smooth scroll */
+        html { 
+            scroll-behavior: smooth; 
+            scroll-padding-top: 80px;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, var(--primary-400), var(--accent-500));
+            border-radius: 3px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, var(--primary-500), var(--accent-600));
+        }
+        
+        /* Premium hover effects */
+        .hover-lift {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-8px);
+        }
+        
+        /* Background patterns */
+        .bg-pattern {
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(14, 165, 233, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(147, 197, 253, 0.03) 0%, transparent 50%);
+        }
+        
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
+        }
+        
+        /* Premium button styles */
+        .btn-premium {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--primary-500), var(--accent-500));
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .btn-premium::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .btn-premium:hover::before {
+            left: 100%;
+        }
+        
+        /* Typography improvements */
+        .text-hero {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            line-height: 1.1;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+        
+        .text-subtitle {
+            font-size: clamp(1.25rem, 4vw, 2rem);
+            line-height: 1.3;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+        }
+        
+        /* Responsive utilities */
+        @media (max-width: 768px) {
+            .glass {
+                background: rgba(255, 255, 255, 0.9);
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 transition-all duration-500" id="navbar">
+        <div class="glass">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex justify-between items-center">
+                    <!-- Logo -->
+                    <div class="flex items-center space-x-4">
+                        <div class="relative">
+                            <div class="w-12 h-12 gradient-primary rounded-2xl flex items-center justify-center shadow-glow">
+                                <i class="fas fa-tint text-white text-xl"></i>
+                            </div>
+                            <div class="absolute -top-1 -right-1 w-4 h-4 bg-emerald-400 rounded-full animate-glow"></div>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-display font-bold gradient-text">Crystal Core</h1>
+                            <p class="text-xs text-slate-500 font-medium tracking-wider">PREMIUM WATER</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="#home" class="nav-link relative py-2 text-slate-700 hover:text-blue-600 font-medium transition-all duration-300 group">
+                            Home
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-sky-500 transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                        <a href="#about" class="nav-link relative py-2 text-slate-700 hover:text-blue-600 font-medium transition-all duration-300 group">
+                            About
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-sky-500 transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                        <a href="#products" class="nav-link relative py-2 text-slate-700 hover:text-blue-600 font-medium transition-all duration-300 group">
+                            Products
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-sky-500 transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                        <a href="#partner" class="nav-link relative py-2 text-slate-700 hover:text-blue-600 font-medium transition-all duration-300 group">
+                            Partnership
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-sky-500 transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                        <a href="#contact" class="btn-premium text-white px-6 py-3 rounded-full font-semibold hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                            Contact
+                        </a>
+                    </div>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden w-10 h-10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors duration-300" id="mobile-menu-btn">
+                        <div class="w-6 h-6 flex flex-col justify-center items-center">
+                            <span class="w-full h-0.5 bg-slate-600 transform transition-all duration-300 origin-center translate-y-1"></span>
+                            <span class="w-full h-0.5 bg-slate-600 transform transition-all duration-300 origin-center"></span>
+                            <span class="w-full h-0.5 bg-slate-600 transform transition-all duration-300 origin-center -translate-y-1"></span>
+                        </div>
+                    </button>
+                </div>
+                
+                <!-- Mobile Menu -->
+                <div class="md:hidden hidden mt-6 pb-6 space-y-4" id="mobile-menu">
+                    <a href="#home" class="nav-link block py-3 px-4 text-slate-700 hover:text-blue-600 hover:bg-white/50 rounded-xl font-medium transition-all duration-300">Home</a>
+                    <a href="#about" class="nav-link block py-3 px-4 text-slate-700 hover:text-blue-600 hover:bg-white/50 rounded-xl font-medium transition-all duration-300">About</a>
+                    <a href="#products" class="nav-link block py-3 px-4 text-slate-700 hover:text-blue-600 hover:bg-white/50 rounded-xl font-medium transition-all duration-300">Products</a>
+                    <a href="#partner" class="nav-link block py-3 px-4 text-slate-700 hover:text-blue-600 hover:bg-white/50 rounded-xl font-medium transition-all duration-300">Partnership</a>
+                    <a href="#contact" class="nav-link block py-3 px-4 text-slate-700 hover:text-blue-600 hover:bg-white/50 rounded-xl font-medium transition-all duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-pattern">
+        <!-- Animated Background -->
+        <div class="absolute inset-0">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-float"></div>
+            <div class="absolute top-1/3 right-1/4 w-80 h-80 bg-sky-400/10 rounded-full blur-3xl animate-float" style="animation-delay: 2s;"></div>
+            <div class="absolute bottom-1/4 left-1/2 w-72 h-72 bg-cyan-400/10 rounded-full blur-3xl animate-float" style="animation-delay: 4s;"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 container mx-auto px-6 text-center">
+            <div class="animate-slide-up">
+                <!-- Premium Badge -->
+                <div class="inline-flex items-center space-x-2 glass px-6 py-3 rounded-full mb-8 shadow-premium">
+                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                    <span class="text-slate-600 font-medium text-sm tracking-wider">PREMIUM QUALITY • ISI CERTIFIED</span>
+                </div>
+                
+                <!-- Main Heading -->
+                <h1 class="text-hero font-display mb-6">
+                    <span class="block text-slate-800">Crystal</span>
+                    <span class="block gradient-text">Core</span>
+                </h1>
+                
+                <!-- Subtitle -->
+                <p class="text-subtitle text-slate-600 mb-4 font-light">Purity in Every Drop</p>
+                
+                <!-- Description -->
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto mb-12 leading-relaxed font-light">
+                    Experience the pinnacle of hydration with our premium packaged drinking water. 
+                    Meticulously crafted through advanced purification technology for unmatched purity and taste.
+                </p>
+                
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                    <a href="#products" class="btn-premium text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 flex items-center space-x-2">
+                        <span>Explore Products</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="#partner" class="glass-dark text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center space-x-2 border border-blue-200/50">
+                        <span>Join Partnership</span>
+                        <i class="fas fa-handshake ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Floating Product Preview -->
+            <div class="absolute bottom-20 left-1/2 transform -translate-x-1/2 hidden lg:block">
+                <div class="relative">
+                    <div class="w-20 h-32 gradient-primary rounded-2xl shadow-glow animate-float flex items-center justify-center">
+                        <i class="fas fa-bottle-water text-white text-2xl"></i>
+                    </div>
+                    <div class="absolute -top-2 -right-2 w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
+                        <i class="fas fa-star text-white text-xs"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about" class="w-12 h-12 glass-dark rounded-full flex items-center justify-center text-blue-600 hover:text-blue-800 transition-colors duration-300">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-32 bg-white relative">
+        <div class="section-divider mb-20"></div>
+        
+        <div class="container mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center mb-20">
+                <div class="inline-block glass px-6 py-2 rounded-full mb-6 shadow-premium">
+                    <span class="text-blue-600 font-semibold text-sm tracking-wider">ABOUT US</span>
+                </div>
+                <h2 class="text-5xl md:text-6xl font-display font-bold text-slate-800 mb-6">
+                    Crafting <span class="gradient-text">Excellence</span>
+                </h2>
+                <p class="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-light">
+                    Where cutting-edge technology meets unwavering commitment to deliver 
+                    the purest drinking water experience.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Content Grid -->
+                <div class="space-y-8">
+                    <!-- Mission Card -->
+                    <div class="glass-dark p-8 rounded-3xl hover-lift hover:shadow-2xl transition-all duration-500">
+                        <div class="flex items-start space-x-6">
+                            <div class="w-16 h-16 gradient-primary rounded-2xl flex items-center justify-center shadow-glow">
+                                <i class="fas fa-bullseye text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-slate-800 mb-4">Our Mission</h3>
+                                <p class="text-slate-600 leading-relaxed">
+                                    To revolutionize hydration by providing every individual access to exceptionally 
+                                    pure drinking water while pioneering sustainable practices that protect our planet's 
+                                    precious water resources for future generations.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Vision Card -->
+                    <div class="glass-dark p-8 rounded-3xl hover-lift hover:shadow-2xl transition-all duration-500">
+                        <div class="flex items-start space-x-6">
+                            <div class="w-16 h-16 gradient-accent rounded-2xl flex items-center justify-center shadow-glow">
+                                <i class="fas fa-eye text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-slate-800 mb-4">Our Vision</h3>
+                                <p class="text-slate-600 leading-relaxed">
+                                    To emerge as the global benchmark for premium packaged drinking water, 
+                                    setting unprecedented standards in purity, innovation, and customer satisfaction 
+                                    while building a sustainable future.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Stats & Certifications -->
+                <div class="space-y-8">
+                    <!-- Stats Grid -->
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center glass p-6 rounded-2xl shadow-premium hover-lift">
+                            <div class="text-3xl font-bold gradient-text mb-2">7+</div>
+                            <div class="text-slate-600 font-medium">Purification Stages</div>
+                        </div>
+                        <div class="text-center glass p-6 rounded-2xl shadow-premium hover-lift">
+                            <div class="text-3xl font-bold gradient-text mb-2">99.9%</div>
+                            <div class="text-slate-600 font-medium">Purity Level</div>
+                        </div>
+                        <div class="text-center glass p-6 rounded-2xl shadow-premium hover-lift">
+                            <div class="text-3xl font-bold gradient-text mb-2">24/7</div>
+                            <div class="text-slate-600 font-medium">Quality Testing</div>
+                        </div>
+                        <div class="text-center glass p-6 rounded-2xl shadow-premium hover-lift">
+                            <div class="text-3xl font-bold gradient-text mb-2">100%</div>
+                            <div class="text-slate-600 font-medium">Eco-Friendly</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Certifications -->
+                    <div class="gradient-secondary p-8 rounded-3xl text-white shadow-2xl">
+                        <h3 class="text-2xl font-bold mb-6 text-center">Premium Certifications</h3>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="text-center">
+                                <div class="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-certificate text-emerald-300 text-2xl"></i>
+                                </div>
+                                <h4 class="font-bold mb-1">ISI Certified</h4>
+                                <p class="text-sm opacity-90">Bureau of Indian Standards</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-shield-alt text-blue-300 text-2xl"></i>
+                                </div>
+                                <h4 class="font-bold mb-1">FSSAI Approved</h4>
+                                <p class="text-sm opacity-90">Food Safety Authority</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Brand Story -->
+            <div class="mt-20 text-center">
+                <div class="max-w-4xl mx-auto glass-dark p-12 rounded-3xl shadow-2xl">
+                    <h3 class="text-3xl font-display font-bold text-slate-800 mb-8">Our Journey</h3>
+                    <div class="prose prose-lg max-w-none text-slate-600 leading-relaxed">
+                        <p class="text-lg mb-6">
+                            Born from a vision to transform the landscape of drinking water, Crystal Core represents 
+                            the perfect fusion of advanced technology and uncompromising quality standards.
+                        </p>
+                        <p class="text-lg">
+                            Our state-of-the-art facility employs cutting-edge RO technology, UV sterilization, 
+                            and seven-stage filtration processes, ensuring that every drop that reaches you 
+                            exceeds the highest purity benchmarks while maintaining essential minerals for optimal health.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-32 bg-gradient-to-br from-slate-50 via-blue-50/50 to-slate-50 relative">
+        <div class="section-divider mb-20"></div>
+        
+        <div class="container mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center mb-20">
+                <div class="inline-block glass px-6 py-2 rounded-full mb-6 shadow-premium">
+                    <span class="text-blue-600 font-semibold text-sm tracking-wider">OUR PRODUCTS</span>
+                </div>
+                <h2 class="text-5xl md:text-6xl font-display font-bold text-slate-800 mb-6">
+                    Premium <span class="gradient-text">Collection</span>
+                </h2>
+                <p class="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-light">
+                    Discover our carefully curated range of premium packaged drinking water, 
+                    designed to meet every hydration need with uncompromising quality.
+                </p>
+            </div>
+            
+            <!-- Product Grid -->
+            <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto mb-20">
+                <!-- 250ml Compact -->
+                <div class="group relative">
+                    <div class="glass p-8 rounded-3xl hover-lift hover:shadow-2xl transition-all duration-500 h-full">
+                        <div class="text-center">
+                            <!-- Product Visual -->
+                            <div class="relative mb-8">
+                                <div class="w-32 h-48 gradient-primary rounded-3xl mx-auto flex items-center justify-center shadow-glow group-hover:shadow-2xl transition-all duration-500 relative overflow-hidden">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent"></div>
+                                    <div class="text-center z-10">
+                                        <i class="fas fa-bottle-water text-white text-4xl mb-3"></i>
+                                        <div class="text-sm text-white font-bold bg-white/20 px-3 py-1 rounded-full">250ml</div>
+                                    </div>
+                                    <div class="absolute -top-2 -right-2 w-8 h-8 bg-emerald-400 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-leaf text-white text-xs"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <h3 class="text-2xl font-bold text-slate-800">Compact Pure</h3>
+                                <p class="text-slate-600 leading-relaxed">
+                                    Perfect for kids, quick refreshments, and portable hydration. 
+                                    Ergonomically designed for small hands and active lifestyles.
+                                </p>
+                                
+                                <!-- Features -->
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-center text-sm text-slate-600">
+                                        <i class="fas fa-check text-emerald-500 mr-3 w-4"></i>
+                                        Child-friendly ergonomic cap
+                                    </div>
+                                    <div class="flex items-center justify-center text-sm text-slate-600">
+                                        <i class="fas fa-check text-emerald-500 mr-3 w-4"></i>
+                                        Ultra-portable convenience
+                                    </div>
+                                    <div class="flex items-center justify-center text-sm text-slate-600">
+                                        <i class="fas fa-check text-emerald-500 mr-3 w-4"></i>
+                                        100% recyclable packaging
+                                    </div>
+                                </div>
+                                
+                                <!-- Pricing -->
+                                <div class="pt-4 border-t border-slate-200">
+                                    <div class="text-center">
+                                        <span class="text-3xl font-bold gradient-text">₹10</span>
+                                        <span class="text-slate-500 ml-1">per bottle</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 500ml Standard - Featured -->
+                <div class="group relative">
+                    <!-- Popular Badge -->
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
+                        <div class="gradient-accent text-white px-6 py-2 rounded-full text-sm font-bold shadow-xl">
+                            <i class="fas fa-star mr-2"></i>MOST POPULAR
+                        </div>
+                    </div>
+                    
+                    <div class="glass p-8 rounded-3xl hover-lift hover:shadow-2xl transition-all duration-500 h-full border-2 border-blue-200/50 relative overflow-hidden">
+                        <!-- Glow effect -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-sky-500/5 rounded-3xl"></div>
+                        
+                        <div class="text-center relative z-10">
+                            <!-- Product Visual -->
+                            <div class="relative mb-8">
+                                <div class="w-36 h-52 gradient-accent rounded-3xl mx-auto flex items-center justify-center shadow-glow group-hover:shadow-2xl transition-all duration-500 relative overflow-hidden">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent"></div>
+                                    <div class="text-center z-10">
+                                        <i class="fas fa-bottle-water text-white text-5xl mb-3"></i>
+                                        <div class="text-sm text-white font-bold bg-white/20 px-3 py-1 rounded-full">500ml</div>
+                                    </div>
+                                    <div class="absolute -top-2 -right-2 w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center animate-pulse">
+                                        <i class="fas fa-crown text-white text-sm"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <h3 class="text-2xl font-bold text-slate-800">Premium Standard</h3>
+                                <p class="text-slate-600 leading-relaxed">
+                                    The perfect balance of portability and hydration capacity. 
+                                    Ideal for offices, gyms, travel, and everyday wellness.
+                                </p>
+                                
+                                <!-- Features -->
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-center text-sm text-slate-600">
+                                        <i class="fas fa-check text-emerald-500 mr-3 w-4"></i>
+                                        Premium ergonomic design
+                                    </div>
+                                    <div class="flex items-center justify-center text-sm text-slate-600">
+                                        <i class="fas fa-check text-emerald-500 mr-3 w-4"></i>
+                                        Optimal hydration volume
+                                    </div>
+                                    <div class="flex items-center justify-center text-sm text-slate-600">
+                                        <i class="fas fa-check text-emerald-500 mr-3 w-4"></i>
+                                        Sports-grade secure cap
+                                    </div>
+                                </div>
+                                
+                                <!-- Pricing -->
+                                <div class="pt-4 border-t border-slate-200">
+                                    <div class="text-center">
+                                        <span class="text-3xl font-bold gradient-text">₹15</span>
+                                        <span class="text-slate-500 ml-1">per bottle</span>
+                                        <div class="text-xs text-emerald-600 font-medium mt-1">Best Value</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 1L Family -->
+                <div class="group relative">
+                    <div class="glass p-8 rounded-3xl hover-lift hover:shadow-2xl transition-all duration-500 h-full">
+                        <div class="text-center">
+                            <!-- Product Visual -->
+                            <div class="relative mb-8">
+                                <div class="w-40 h-56 gradient-secondary rounded-3xl mx-auto flex items-center justify-center shadow-glow group-hover:shadow-2xl transition-all duration-500 relative overflow-hidden">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent"></div>
+                                    <div class="text-center z-10">
+                                        <i class="fas fa-bottle-water text-white text-6xl mb-3"></i>
+                                        <div class="text-sm text-white font-bold bg-white/20 px-3 py-1 rounded-full">1000ml</div>
+                                    </div>
+                                    <div class="absolute -top-2 -right-2 w-8 h-8 bg-blue-400 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-users text-white text-xs"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <h3 class="text-2xl font-bold text-slate-800">Family Size</h3>
+                                <p class="text-slate-600 leading-relaxed">
+                                    Premium value for families and extended activities. 
+                                    Maximum hydration capacity with superior convenience.
+                                </p>
+                                
+                                <!-- Features -->
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-center text-sm text-slate-600">
+                                        <i class="fas fa-check text-emerald-500 mr-3 w-4"></i>
+                                        Family-friendly value pack
+                                    </div>
+                                    <div class="flex items-center justify-center text-sm text-slate-600">
+                                        <i class="fas fa-check text-emerald-500 mr-3 w-4"></i>
+                                        Extended hydration capacity
+                                    </div>
+                                    <div class="flex items-center justify-center text-sm text-slate-600">
+                                        <i class="fas fa-check text-emerald-500 mr-3 w-4"></i>
+                                        Wide-mouth easy-pour design
+                                    </div>
+                                </div>
+                                
+                                <!-- Pricing -->
+                                <div class="pt-4 border-t border-slate-200">
+                                    <div class="text-center">
+                                        <span class="text-3xl font-bold gradient-text">₹25</span>
+                                        <span class="text-slate-500 ml-1">per bottle</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Excellence Features -->
+            <div class="max-w-6xl mx-auto">
+                <div class="gradient-secondary p-12 rounded-3xl text-white shadow-2xl relative overflow-hidden">
+                    <!-- Background Pattern -->
+                    <div class="absolute inset-0 opacity-10">
+                        <div class="absolute top-0 left-0 w-32 h-32 border border-white/20 rounded-full"></div>
+                        <div class="absolute bottom-0 right-0 w-24 h-24 border border-white/20 rounded-full"></div>
+                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 border border-white/20 rounded-full"></div>
+                    </div>
+                    
+                    <div class="relative z-10">
+                        <div class="text-center mb-12">
+                            <h3 class="text-4xl font-display font-bold mb-4">Why Crystal Core Excellence?</h3>
+                            <p class="text-xl opacity-90 font-light">Experience the difference that premium quality makes</p>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-4 gap-8">
+                            <div class="text-center group">
+                                <div class="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                    <i class="fas fa-filter text-3xl"></i>
+                                </div>
+                                <h4 class="text-xl font-bold mb-3">7-Stage Purification</h4>
+                                <p class="opacity-90 font-light">Advanced multi-stage filtration with RO, UV & mineral enhancement</p>
+                            </div>
+                            
+                            <div class="text-center group">
+                                <div class="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                    <i class="fas fa-microscope text-3xl"></i>
+                                </div>
+                                <h4 class="text-xl font-bold mb-3">Laboratory Tested</h4>
+                                <p class="opacity-90 font-light">Rigorous quality testing at every production stage</p>
+                            </div>
+                            
+                            <div class="text-center group">
+                                <div class="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                    <i class="fas fa-leaf text-3xl"></i>
+                                </div>
+                                <h4 class="text-xl font-bold mb-3">Eco-Responsible</h4>
+                                <p class="opacity-90 font-light">100% recyclable materials with minimal environmental impact</p>
+                            </div>
+                            
+                            <div class="text-center group">
+                                <div class="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                    <i class="fas fa-shipping-fast text-3xl"></i>
+                                </div>
+                                <h4 class="text-xl font-bold mb-3">Fresh Delivery</h4>
+                                <p class="opacity-90 font-light">Direct from our facility to ensure maximum freshness</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section id="partner" class="py-32 bg-white relative">
+        <div class="section-divider mb-20"></div>
+        
+        <div class="container mx-auto px-6">
+            <div class="max-w-7xl mx-auto">
+                <!-- Section Header -->
+                <div class="text-center mb-20">
+                    <div class="inline-block glass px-6 py-2 rounded-full mb-6 shadow-premium">
+                        <span class="text-blue-600 font-semibold text-sm tracking-wider">PARTNERSHIP</span>
+                    </div>
+                    <h2 class="text-5xl md:text-6xl font-display font-bold text-slate-800 mb-6">
+                        Join Our <span class="gradient-text">Network</span>
+                    </h2>
+                    <p class="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-light">
+                        Partner with Crystal Core and become part of India's fastest-growing premium water brand. 
+                        Unlock exceptional business opportunities with our proven success model.
+                    </p>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-16 items-start">
+                    <!-- Partnership Benefits -->
+                    <div class="space-y-8">
+                        <!-- Benefits Header -->
+                        <div class="glass-dark p-8 rounded-3xl shadow-xl">
+                            <h3 class="text-3xl font-bold text-slate-800 mb-6 text-center">Premium Partnership Benefits</h3>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start space-x-4 group">
+                                    <div class="w-12 h-12 gradient-primary rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                                        <i class="fas fa-chart-line text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-bold text-slate-800 mb-2">Exceptional Margins</h4>
+                                        <p class="text-slate-600 font-light">Industry-leading profit margins with transparent pricing and no hidden costs</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4 group">
+                                    <div class="w-12 h-12 gradient-accent rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                                        <i class="fas fa-bullhorn text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-bold text-slate-800 mb-2">Marketing Excellence</h4>
+                                        <p class="text-slate-600 font-light">Complete promotional support with premium marketing materials and campaigns</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4 group">
+                                    <div class="w-12 h-12 gradient-secondary rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                                        <i class="fas fa-shield-alt text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-bold text-slate-800 mb-2">Territory Protection</h4>
+                                        <p class="text-slate-600 font-light">Exclusive distribution rights with guaranteed territory protection</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4 group">
+                                    <div class="w-12 h-12 bg-emerald-500 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                                        <i class="fas fa-graduation-cap text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-bold text-slate-800 mb-2">Training & Support</h4>
+                                        <p class="text-slate-600 font-light">Comprehensive training programs and dedicated ongoing support</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Contact Card -->
+                        <div class="gradient-secondary p-8 rounded-3xl text-white shadow-2xl relative overflow-hidden">
+                            <!-- Background decoration -->
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
+                            
+                            <div class="relative z-10">
+                                <h4 class="text-2xl font-bold mb-4">Ready to Partner?</h4>
+                                <p class="opacity-90 mb-6 font-light">
+                                    Join our exclusive network of successful partners and start building your premium water business today.
+                                </p>
+                                <div class="flex items-center space-x-4">
+                                    <div class="flex items-center space-x-2">
+                                        <i class="fas fa-phone"></i>
+                                        <span class="font-medium">+91 98765 43210</span>
+                                    </div>
+                                    <div class="w-px h-6 bg-white/30"></div>
+                                    <div class="flex items-center space-x-2">
+                                        <i class="fas fa-envelope"></i>
+                                        <span class="font-medium">partners@crystalcore.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Partnership Application Form -->
+                    <div class="glass p-10 rounded-3xl shadow-2xl">
+                        <h3 class="text-3xl font-bold text-slate-800 mb-8 text-center">Partnership Application</h3>
+                        
+                        <!-- Note: Replace action="#" with your preferred form handler -->
+                        <form action="#" method="POST" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-semibold text-slate-700 mb-3">Full Name *</label>
+                                    <input type="text" id="name" name="name" required 
+                                           class="w-full px-5 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 shadow-inner-premium">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-sm font-semibold text-slate-700 mb-3">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required 
+                                           class="w-full px-5 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 shadow-inner-premium">
+                                </div>
+                            </div>
+                            
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="email" class="block text-sm font-semibold text-slate-700 mb-3">Email Address</label>
+                                    <input type="email" id="email" name="email" 
+                                           class="w-full px-5 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 shadow-inner-premium">
+                                </div>
+                                <div>
+                                    <label for="location" class="block text-sm font-semibold text-slate-700 mb-3">Location/City *</label>
+                                    <input type="text" id="location" name="location" required 
+                                           class="w-full px-5 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 shadow-inner-premium">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="business-type" class="block text-sm font-semibold text-slate-700 mb-3">Partnership Type</label>
+                                <select id="business-type" name="business-type" 
+                                        class="w-full px-5 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 shadow-inner-premium">
+                                    <option value="">Select Partnership Type</option>
+                                    <option value="distributor">Regional Distributor</option>
+                                    <option value="retailer">Premium Retailer</option>
+                                    <option value="wholesaler">Bulk Wholesaler</option>
+                                    <option value="franchise">Franchise Partner</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="experience" class="block text-sm font-semibold text-slate-700 mb-3">Business Experience (Years)</label>
+                                <select id="experience" name="experience" 
+                                        class="w-full px-5 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 shadow-inner-premium">
+                                    <option value="">Select Experience Level</option>
+                                    <option value="0-2">0-2 Years</option>
+                                    <option value="3-5">3-5 Years</option>
+                                    <option value="6-10">6-10 Years</option>
+                                    <option value="10+">10+ Years</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-semibold text-slate-700 mb-3">Tell us about your business goals</label>
+                                <textarea id="message" name="message" rows="4" 
+                                          placeholder="Share your business vision, current operations, and why you'd like to partner with Crystal Core..."
+                                          class="w-full px-5 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 shadow-inner-premium resize-none"></textarea>
+                            </div>
+                            
+                            <button type="submit" 
+                                    class="w-full btn-premium text-white py-5 rounded-xl text-lg font-semibold hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-500">
+                                <span class="flex items-center justify-center space-x-2">
+                                    <span>Submit Application</span>
+                                    <i class="fas fa-paper-plane"></i>
+                                </span>
+                            </button>
+                            
+                            <p class="text-sm text-slate-500 text-center font-light">
+                                * Our partnership team will review your application and contact you within 24 hours
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 bg-gradient-to-br from-slate-50 via-blue-50/30 to-slate-50 relative">
+        <div class="section-divider mb-20"></div>
+        
+        <div class="container mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center mb-20">
+                <div class="inline-block glass px-6 py-2 rounded-full mb-6 shadow-premium">
+                    <span class="text-blue-600 font-semibold text-sm tracking-wider">CONTACT US</span>
+                </div>
+                <h2 class="text-5xl md:text-6xl font-display font-bold text-slate-800 mb-6">
+                    Get in <span class="gradient-text">Touch</span>
+                </h2>
+                <p class="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-light">
+                    Ready to experience Crystal Core excellence? Our dedicated team is here to assist you 
+                    with any queries, support needs, or business opportunities.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16 max-w-7xl mx-auto">
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <!-- Main Contact Card -->
+                    <div class="glass-dark p-10 rounded-3xl shadow-2xl">
+                        <h3 class="text-3xl font-bold text-slate-800 mb-8">Contact Information</h3>
+                        
+                        <div class="space-y-8">
+                            <!-- Address -->
+                            <div class="flex items-start space-x-6">
+                                <div class="w-16 h-16 gradient-primary rounded-2xl flex items-center justify-center flex-shrink-0 shadow-glow">
+                                    <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-slate-800 mb-2">Corporate Headquarters</h4>
+                                    <p class="text-slate-600 leading-relaxed">
+                                        Crystal Core Industries Private Limited<br>
+                                        Tower A, Business Complex<br>
+                                        Sector 15, Industrial Area<br>
+                                        New Delhi - 110001, India
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Phone -->
+                            <div class="flex items-start space-x-6">
+                                <div class="w-16 h-16 gradient-accent rounded-2xl flex items-center justify-center flex-shrink-0 shadow-glow">
+                                    <i class="fas fa-phone text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-slate-800 mb-2">Phone Numbers</h4>
+                                    <div class="space-y-1">
+                                        <p class="text-slate-600">
+                                            <span class="font-medium">Sales:</span> 
+                                            <a href="tel:+919876543210" class="hover:text-blue-600 transition-colors">+91 98765 43210</a>
+                                        </p>
+                                        <p class="text-slate-600">
+                                            <span class="font-medium">Support:</span> 
+                                            <a href="tel:+911122334455" class="hover:text-blue-600 transition-colors">+91 11 2233 4455</a>
+                                        </p>
+                                        <p class="text-slate-600">
+                                            <span class="font-medium">Partnership:</span> 
+                                            <a href="tel:+919988776655" class="hover:text-blue-600 transition-colors">+91 99887 76655</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Email -->
+                            <div class="flex items-start space-x-6">
+                                <div class="w-16 h-16 gradient-secondary rounded-2xl flex items-center justify-center flex-shrink-0 shadow-glow">
+                                    <i class="fas fa-envelope text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-slate-800 mb-2">Email Addresses</h4>
+                                    <div class="space-y-1">
+                                        <p class="text-slate-600">
+                                            <span class="font-medium">General:</span> 
+                                            <a href="mailto:info@crystalcore.com" class="hover:text-blue-600 transition-colors">info@crystalcore.com</a>
+                                        </p>
+                                        <p class="text-slate-600">
+                                            <span class="font-medium">Sales:</span> 
+                                            <a href="mailto:sales@crystalcore.com" class="hover:text-blue-600 transition-colors">sales@crystalcore.com</a>
+                                        </p>
+                                        <p class="text-slate-600">
+                                            <span class="font-medium">Partnership:</span> 
+                                            <a href="mailto:partners@crystalcore.com" class="hover:text-blue-600 transition-colors">partners@crystalcore.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- WhatsApp & Quick Actions -->
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-green-500 p-8 rounded-3xl text-white shadow-xl hover-lift">
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <i class="fab fa-whatsapp text-3xl"></i>
+                                </div>
+                                <h4 class="text-xl font-bold mb-3">WhatsApp Support</h4>
+                                <p class="opacity-90 mb-6 font-light">Get instant support and quick responses</p>
+                                <a href="https://wa.me/919876543210" target="_blank" 
+                                   class="inline-block bg-white text-green-500 px-6 py-3 rounded-xl font-semibold hover:bg-gray-50 transition-colors duration-300">
+                                    <i class="fab fa-whatsapp mr-2"></i>Chat Now
+                                </a>
+                            </div>
